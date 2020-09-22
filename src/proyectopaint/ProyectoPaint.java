@@ -1,21 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package proyectopaint;
 
-/**
- *
- * @author henry duarte
- */
+import proyectopaint.presentacion.ModeloPrincipal;
+import proyectopaint.presentacion.Principal;
+
+
 public class ProyectoPaint {
 
-    /**
-     * @param args the command line arguments
-     */
+    private ModeloPrincipal miApp;
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        //new Principal().setVisible(true);
+        
+        new ProyectoPaint();
+    }
+    
+    
+    public ProyectoPaint() {
+        miApp = new ModeloPrincipal();
+        miApp.iniciar();        
     }
     
 }
